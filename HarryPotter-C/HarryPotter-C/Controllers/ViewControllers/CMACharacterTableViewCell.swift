@@ -17,6 +17,9 @@ class CMACharacterTableViewCell: UITableViewCell {
     @IBOutlet weak var characterDeathEaterImage: UIImageView!
     
     func updateViews(with character: CMACharacter) {
+        characterDeathEaterImage.isHidden = true
+        characterBloodStatus.isHidden = true
+        characterHouseImage.isHidden = true
         
         if character.deathEater == true {
             characterDeathEaterImage.isHidden = false

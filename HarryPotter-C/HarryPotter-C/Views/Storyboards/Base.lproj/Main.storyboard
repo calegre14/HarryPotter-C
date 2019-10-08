@@ -40,7 +40,7 @@
                                             </subviews>
                                         </stackView>
                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="hYg-BT-3gK">
-                                            <rect key="frame" x="12" y="68" width="0.0" height="0.5"/>
+                                            <rect key="frame" x="12" y="68" width="158" height="0.5"/>
                                             <subviews>
                                                 <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gtH-Jf-xI6">
                                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -64,6 +64,7 @@
                                         <constraint firstItem="hYg-BT-3gK" firstAttribute="leading" secondItem="kBH-te-yfX" secondAttribute="leading" id="TXu-Ey-X4K"/>
                                         <constraint firstItem="hYg-BT-3gK" firstAttribute="leading" secondItem="Y6w-p9-23c" secondAttribute="leading" constant="12" id="c6J-Hj-KXI"/>
                                         <constraint firstItem="hYg-BT-3gK" firstAttribute="top" secondItem="kBH-te-yfX" secondAttribute="bottom" constant="4" id="jaR-CJ-J5k"/>
+                                        <constraint firstAttribute="trailing" secondItem="hYg-BT-3gK" secondAttribute="trailing" constant="244" id="l96-QC-v95"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="kBH-te-yfX" secondAttribute="trailing" constant="4" id="wEw-oT-Mh8"/>
                                     </constraints>
                                 </tableViewCellContentView>
