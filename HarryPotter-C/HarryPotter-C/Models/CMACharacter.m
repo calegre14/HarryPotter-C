@@ -40,7 +40,7 @@ static NSString * const kRole = @"role";
     NSString *name = dictionary[kName];
     NSString *house = dictionary[kHouse];
     NSString *bloodStatus = dictionary[kBloodStatus];
-    BOOL deathEater = dictionary[kDeathEater];
+    BOOL deathEater = [dictionary[kDeathEater] boolValue];
     NSString *role = dictionary[kRole];
     
     return [self initWithCharacterName:name house:house bloodSatus:bloodStatus deathEater:deathEater role:role];

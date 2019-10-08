@@ -2,37 +2,37 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6re-N3-RPv">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14868"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Character Table View Controller-->
         <scene sceneID="yhg-ro-cqa">
             <objects>
-                <tableViewController id="6re-N3-RPv" sceneMemberID="viewController">
+                <tableViewController id="6re-N3-RPv" customClass="CMACharacterTableViewController" customModule="HarryPotter_C" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="UJO-i4-p8T">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Z9o-Q2-2fs">
-                                <rect key="frame" x="0.0" y="28" width="414" height="116.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="potterCell" id="Z9o-Q2-2fs" customClass="CMACharacterTableViewCell" customModule="HarryPotter_C" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="72.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Z9o-Q2-2fs" id="Y6w-p9-23c">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="116.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="72.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kBH-te-yfX">
-                                            <rect key="frame" x="24" y="15" width="366" height="49.5"/>
+                                            <rect key="frame" x="12" y="15" width="378" height="49"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDQ-F9-tht">
-                                                    <rect key="frame" x="0.0" y="0.0" width="366" height="21"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="378" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOU-8e-pMg">
-                                                    <rect key="frame" x="0.0" y="29" width="366" height="20.5"/>
+                                                    <rect key="frame" x="0.0" y="28.5" width="378" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -40,33 +40,40 @@
                                             </subviews>
                                         </stackView>
                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="hYg-BT-3gK">
-                                            <rect key="frame" x="4" y="68.5" width="140" height="44"/>
+                                            <rect key="frame" x="12" y="68" width="0.0" height="0.5"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gtH-Jf-xI6">
-                                                    <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gtH-Jf-xI6">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="44" id="Ect-tG-zWg"/>
-                                                        <constraint firstAttribute="height" constant="44" id="VxV-ko-n9e"/>
+                                                        <constraint firstAttribute="width" constant="50" id="Ect-tG-zWg"/>
+                                                        <constraint firstAttribute="height" constant="50" id="VxV-ko-n9e"/>
                                                     </constraints>
                                                 </imageView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1bk-sQ-Pbb">
-                                                    <rect key="frame" x="48" y="0.0" width="44" height="44"/>
+                                                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deathEater" translatesAutoresizingMaskIntoConstraints="NO" id="1bk-sQ-Pbb">
+                                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="50"/>
                                                 </imageView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Of-Vb-m5R">
-                                                    <rect key="frame" x="96" y="0.0" width="44" height="44"/>
+                                                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Of-Vb-m5R">
+                                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="50"/>
                                                 </imageView>
                                             </subviews>
                                         </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="hYg-BT-3gK" firstAttribute="leading" secondItem="Y6w-p9-23c" secondAttribute="leading" constant="4" id="1b7-vX-zra"/>
                                         <constraint firstAttribute="bottom" secondItem="hYg-BT-3gK" secondAttribute="bottom" constant="4" id="PCJ-cr-e9u"/>
                                         <constraint firstItem="kBH-te-yfX" firstAttribute="top" secondItem="Y6w-p9-23c" secondAttribute="topMargin" constant="4" id="SuT-Oo-Q8c"/>
+                                        <constraint firstItem="hYg-BT-3gK" firstAttribute="leading" secondItem="kBH-te-yfX" secondAttribute="leading" id="TXu-Ey-X4K"/>
+                                        <constraint firstItem="hYg-BT-3gK" firstAttribute="leading" secondItem="Y6w-p9-23c" secondAttribute="leading" constant="12" id="c6J-Hj-KXI"/>
                                         <constraint firstItem="hYg-BT-3gK" firstAttribute="top" secondItem="kBH-te-yfX" secondAttribute="bottom" constant="4" id="jaR-CJ-J5k"/>
-                                        <constraint firstItem="kBH-te-yfX" firstAttribute="leading" secondItem="Y6w-p9-23c" secondAttribute="leadingMargin" constant="4" id="mDM-4g-XXh"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="kBH-te-yfX" secondAttribute="trailing" constant="4" id="wEw-oT-Mh8"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="characterBloodStatus" destination="6Of-Vb-m5R" id="QYf-p3-VQY"/>
+                                    <outlet property="characterDeathEaterImage" destination="1bk-sQ-Pbb" id="V5s-so-T9E"/>
+                                    <outlet property="characterHouseImage" destination="gtH-Jf-xI6" id="GLb-iA-tEZ"/>
+                                    <outlet property="characterNameLabel" destination="fDQ-F9-tht" id="BOz-Z7-4yN"/>
+                                    <outlet property="characterRoleLabel" destination="wOU-8e-pMg" id="Q2x-J9-9a9"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -80,4 +87,7 @@
             <point key="canvasLocation" x="163.768115942029" y="137.94642857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="deathEater" width="136" height="386"/>
+    </resources>
 </document>
