@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		289F76CC234CF22C00A4EEAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 289F76CB234CF22C00A4EEAF /* AppDelegate.m */; };
 		289F76CF234CF22C00A4EEAF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 289F76CE234CF22C00A4EEAF /* SceneDelegate.m */; };
-		289F76D2234CF22C00A4EEAF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289F76D1234CF22C00A4EEAF /* ViewController.m */; };
 		289F76D5234CF22C00A4EEAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 289F76D3234CF22C00A4EEAF /* Main.storyboard */; };
 		289F76D7234CF22D00A4EEAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 289F76D6234CF22D00A4EEAF /* Assets.xcassets */; };
 		289F76DA234CF22D00A4EEAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 289F76D8234CF22D00A4EEAF /* LaunchScreen.storyboard */; };
 		289F76DD234CF22D00A4EEAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 289F76DC234CF22D00A4EEAF /* main.m */; };
+		289F76E9234CF70700A4EEAF /* CMACharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 289F76E8234CF70700A4EEAF /* CMACharacter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +22,13 @@
 		289F76CB234CF22C00A4EEAF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		289F76CD234CF22C00A4EEAF /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		289F76CE234CF22C00A4EEAF /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		289F76D0234CF22C00A4EEAF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		289F76D1234CF22C00A4EEAF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		289F76D4234CF22C00A4EEAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		289F76D6234CF22D00A4EEAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		289F76D9234CF22D00A4EEAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		289F76DB234CF22D00A4EEAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		289F76DC234CF22D00A4EEAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		289F76E7234CF70700A4EEAF /* CMACharacter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMACharacter.h; sourceTree = "<group>"; };
+		289F76E8234CF70700A4EEAF /* CMACharacter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMACharacter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,19 +61,75 @@
 		289F76C9234CF22C00A4EEAF /* HarryPotter-C */ = {
 			isa = PBXGroup;
 			children = (
+				289F76EA234CF71000A4EEAF /* Controllers */,
+				289F76E5234CF6A700A4EEAF /* Views */,
+				289F76E4234CF69E00A4EEAF /* Models */,
+				289F76E3234CF36E00A4EEAF /* Resources */,
+			);
+			path = "HarryPotter-C";
+			sourceTree = "<group>";
+		};
+		289F76E3234CF36E00A4EEAF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				289F76CA234CF22C00A4EEAF /* AppDelegate.h */,
 				289F76CB234CF22C00A4EEAF /* AppDelegate.m */,
 				289F76CD234CF22C00A4EEAF /* SceneDelegate.h */,
 				289F76CE234CF22C00A4EEAF /* SceneDelegate.m */,
-				289F76D0234CF22C00A4EEAF /* ViewController.h */,
-				289F76D1234CF22C00A4EEAF /* ViewController.m */,
-				289F76D3234CF22C00A4EEAF /* Main.storyboard */,
 				289F76D6234CF22D00A4EEAF /* Assets.xcassets */,
 				289F76D8234CF22D00A4EEAF /* LaunchScreen.storyboard */,
 				289F76DB234CF22D00A4EEAF /* Info.plist */,
 				289F76DC234CF22D00A4EEAF /* main.m */,
 			);
-			path = "HarryPotter-C";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		289F76E4234CF69E00A4EEAF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				289F76E7234CF70700A4EEAF /* CMACharacter.h */,
+				289F76E8234CF70700A4EEAF /* CMACharacter.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		289F76E5234CF6A700A4EEAF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				289F76E6234CF6AE00A4EEAF /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		289F76E6234CF6AE00A4EEAF /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				289F76D3234CF22C00A4EEAF /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		289F76EA234CF71000A4EEAF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				289F76EC234CF71D00A4EEAF /* ModelControllers */,
+				289F76EB234CF71600A4EEAF /* ViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		289F76EB234CF71600A4EEAF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		289F76EC234CF71D00A4EEAF /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,10 +203,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				289F76D2234CF22C00A4EEAF /* ViewController.m in Sources */,
 				289F76CC234CF22C00A4EEAF /* AppDelegate.m in Sources */,
 				289F76DD234CF22D00A4EEAF /* main.m in Sources */,
 				289F76CF234CF22C00A4EEAF /* SceneDelegate.m in Sources */,
+				289F76E9234CF70700A4EEAF /* CMACharacter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5XC6N4RBRH;
-				INFOPLIST_FILE = "HarryPotter-C/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/HarryPotter-C/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,7 +365,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5XC6N4RBRH;
-				INFOPLIST_FILE = "HarryPotter-C/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/HarryPotter-C/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

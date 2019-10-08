@@ -1,15 +1,17 @@
 //
-//  ViewController.h
+//  CMACharacter.h
 //  HarryPotter-C
 //
 //  Created by Christopher Alegre on 10/8/19.
 //  Copyright © 2019 Christopher Alegre. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface CMACharacter : NSObject
 
 @end
 
+NS_ASSUME_NONNULL_END
